@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap-min-css -->
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Kinomaniya</title>
+</head>
+
+<header class="bg-success">
+    <div class="container">
+        <nav class="nav p-3">
+            <h3 class="nav__logo">
+                All Movies APP
+            </h3>
+
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 p-5 bg-light m-2">
+                    <form action="#" id="submitForm">
+                        <label class="w-100 my-2 fs-4" for="filmName">
+                            Enter film name
+                            <input class="form-control p-3" type="text" placeholder="Enter film name" id="filmName">
+                        </label>
+
+                        <label class="w-100 my-2 fs-4" for="filmRating">    
+                            Enter film raiting
+                            <input class="form-control p-3" type="number" min="1" max="10" placeholder="Enter film raiting" id="filmRating">
+                        </label>
+
+                        <select class="form-select w-100 p-3 my-3" id="category">
+                            <option value="all" selected disabled>Select film category</option>
+                        </select>
+
+                        <button class="btn btn-success w-75 p-3" type="submit">
+                                SEARCH
+                        </button>
+
+                    </form>
+
+                    <div class="card card-res d-none w-75 my-3 p-3 shadow bg-light">
+                        <h4 class="text-success" id="res"></h4>
+                    </div>
+
+                </div>
+
+                <div class="col-md-7 p-3 bg-light">
+                    <div class="wrapper">
+                    </div>
+                </div>
+
+                <div class="col p-3 bg-light m-2">
+
+                </div>
+            </div>
+        </div>
+    </section>    
+</body>
+
+<!-- movies database -->
+<script src="./js/db.js"></script>
+
+<!-- utilits js -->
+<script src="./js/utilits.js"></script>
+
+<!-- main js -->
+<script src="./js/main.js"></script>
+
+</html>
