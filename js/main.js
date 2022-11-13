@@ -1,6 +1,6 @@
 "use strict";
 
-movies.splice(32000);
+movies.splice(3200);
 
 // --------------- NORMALIZE ALL MOVIES -------------------- //
 
